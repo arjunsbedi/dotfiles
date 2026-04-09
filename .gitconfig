@@ -1,0 +1,17 @@
+[user]
+	name = Arjun Bedi
+	email = asbedi@usc.edu
+[color]
+	ui = auto
+[core]
+	editor = nano
+	autocrlf = input
+[init]
+	defaultBranch = main
+[push]
+	default = simple
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
